@@ -73,9 +73,6 @@ function App() {
 
   return (
     <div className="app-wrapper">
-      <div className="bg-gradient-1"></div>
-      <div className="bg-gradient-2"></div>
-      
       <div className="container">
         <header className="app-header">
           <div className="header-content">
