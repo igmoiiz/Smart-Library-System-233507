@@ -74,8 +74,9 @@ function App() {
   return (
     <div className="container">
       <header className="app-header">
-        <h1 className="app-title">Smart Library</h1>
-        <p className="app-subtitle">Manage your book collection efficiently</p>
+        <h1 className="app-title">Smart Library System</h1>
+        <p className="app-subtitle">Manage Important Collections Efficiently</p>
+        <p className="app-subtitle">Made with 🤔 by Moiz Baloch - 233507</p>
       </header>
 
       <main>
