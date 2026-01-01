@@ -36,7 +36,7 @@ const BookForm = ({ onAddBook }) => {
             value={formData.title}
             onChange={handleChange}
             className="form-input"
-            placeholder="e.g. The Great Gatsby"
+            placeholder="XYZ"
             required
           />
         </div>
@@ -49,7 +49,7 @@ const BookForm = ({ onAddBook }) => {
             value={formData.author}
             onChange={handleChange}
             className="form-input"
-            placeholder="e.g. F. Scott Fitzgerald"
+            placeholder="John Doe"
             required
           />
         </div>
@@ -62,7 +62,7 @@ const BookForm = ({ onAddBook }) => {
             value={formData.isbn}
             onChange={handleChange}
             className="form-input"
-            placeholder="e.g. 978-0743273565"
+            placeholder="1234567890"
             required
           />
         </div>
