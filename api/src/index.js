@@ -7,17 +7,19 @@ const bookRoutes = require('./routes/books.routes');
 dotenv.config();
 const app = express();
 
-// Middleware
+// CORS Middleware to enable cross-origin requests from frontend
 app.use(cors(
     {
-        origin: 'http://localhost:3000',
+        origin: 'http://localhost:5173',
     }
-)); // Allow frontend access
+));
+//  EXPRESS JSON Middleware to parse JSON request bodies
 app.use(express.json());
 
 // Routes
 app.use('/books', bookRoutes);
 
+//  Database Connection
 mongoose.connect(process.env.MONGODB_URI)
     .then(() => {
         console.log('Connected to MongoDB');
