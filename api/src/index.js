@@ -13,6 +13,11 @@ app.use(cors());
 //  EXPRESS JSON Middleware to parse JSON request bodies
 app.use(express.json());
 
+// Health Check Route
+app.get('/health', (req, res) => {
+    res.status(200).json({ status: 'api running' });
+});
+
 // Routes
 app.use('/books', bookRoutes);
 
