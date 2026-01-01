@@ -18,6 +18,11 @@ app.get('/health', (req, res) => {
     res.status(200).json({ status: 'api running' });
 });
 
+// Root Route
+app.get('/', (req, res) => {
+    res.send('Smart Library API');
+});
+
 // Routes
 app.use('/books', bookRoutes);
 
