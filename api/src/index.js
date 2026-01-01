@@ -8,7 +8,11 @@ dotenv.config();
 const app = express();
 
 // CORS Middleware to enable cross-origin requests from frontend
-app.use(cors());
+app.use(cors(
+    {
+        origin: "https://smart-library-system-nine.vercel.app/"
+    }
+));
 
 //  EXPRESS JSON Middleware to parse JSON request bodies
 app.use(express.json());
