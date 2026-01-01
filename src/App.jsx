@@ -72,24 +72,33 @@ function App() {
   };
 
   return (
-    <div className="container">
-      <header className="app-header">
-        <h1 className="app-title">Smart Library System</h1>
-        <p className="app-subtitle">Manage Important Collections Efficiently</p>
-        <p className="app-subtitle">Made with 🤔 by Moiz Baloch - 233507</p>
-      </header>
+    <div className="app-wrapper">
+      <div className="bg-gradient-1"></div>
+      <div className="bg-gradient-2"></div>
+      
+      <div className="container">
+        <header className="app-header">
+          <div className="header-content">
+            <h1 className="app-title">Smart Library<span className="text-highlight">System</span></h1>
+            <p className="app-subtitle">Manage Important Collections Efficiently</p>
+          </div>
+          <div className="header-badge">
+            <span className="badge-text">Moiz Baloch - 233507</span>
+          </div>
+        </header>
 
-      <main>
-        <BookForm onAddBook={handleAddBook} />
-        
-        {loading ? (
-          <div className="loading-spinner"></div>
-        ) : error ? (
-           <div style={{color: 'red', textAlign: 'center'}}>{error}</div> 
-        ) : (
-          <BookList books={books} onDelete={handleDeleteBook} />
-        )}
-      </main>
+        <main>
+          <BookForm onAddBook={handleAddBook} />
+          
+          {loading ? (
+            <div className="loading-spinner"></div>
+          ) : error ? (
+             <div className="error-message">{error}</div> 
+          ) : (
+            <BookList books={books} onDelete={handleDeleteBook} />
+          )}
+        </main>
+      </div>
     </div>
   );
 }
