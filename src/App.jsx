@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import BookForm from './components/BookForm';
 import BookList from './components/BookList';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://smart-library-api-eosin.vercel.app/';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://smart-library-api-eosin.vercel.app';
 
 function App() {
   const [books, setBooks] = useState([]);
