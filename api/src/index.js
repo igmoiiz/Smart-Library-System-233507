@@ -10,7 +10,7 @@ const app = express();
 // CORS Middleware to enable cross-origin requests from frontend
 app.use(cors(
     {
-        origin: "https://smart-library-system-nine.vercel.app/"
+        origin: "https://smart-library-system-git-main-moiz-balochs-projects.vercel.app?_vercel_share=JCOwe2xHHUzfzJdhVW2zdjjGqDbS70cg"
     }
 ));
 
